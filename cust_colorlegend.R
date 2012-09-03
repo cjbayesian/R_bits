@@ -66,8 +66,8 @@ colorlegend<-function (col = femmecol(100), zlim, zlevels = 5, dz = NULL,
     }
     if (!is.null(main)) {
         for (i in length(main):1) text(x = mean(c(xmin, xmax))+mean(c(xmin, xmax))-xmin, 
-            y = ymax + 0.05 * (length(main) - i + 1), labels = main[i], 
-            adj = c(0.5, 0.5), cex = main.cex, col = main.col)
+            y = ymax + 0.1 * (length(main) - i + 1), labels = main[i], 
+            adj = c(0, -1), cex = main.cex, col = main.col)
     }
     par(new = FALSE)
     par(mar = omar)
